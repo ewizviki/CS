@@ -35,7 +35,7 @@
                                 </td>
                                 <td class="text-nowrap text-center">
                                     <!-- ngRepeat: lobjDetails in lobjHistory.TicketHistoryTrips --><label ng-repeat="lobjDetails in lobjHistory.TicketHistoryTrips" class="ng-binding ng-scope">
-                                        AirAsia India-SME Fare
+                                        Air India eXPRESS-SME Fare
                                         <!-- ngIf: lobjHistory.TicketHistoryTrips.length == 2 --><span ng-if="lobjHistory.TicketHistoryTrips.length == 2" class="ng-scope">
                                             <!-- ngIf: $index == 0 --><span ng-if="$index == 0" class="ng-scope">-&nbsp;</span><!-- end ngIf: $index == 0 -->
                                         </span><!-- end ngIf: lobjHistory.TicketHistoryTrips.length == 2 -->
