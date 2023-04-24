@@ -1,0 +1,51 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>Report</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>
+                        <thead class="Retail">
+                            <tr>
+                                <th class="text-nowrap text-center">Ref No</th>
+                                <th class="text-nowrap text-center">Booking Date</th>
+                                <th class="text-nowrap text-center">Travel Date</th>
+                                <th class="text-nowrap text-center">Itinerary</th>
+                                <th class="text-nowrap text-center">Airline</th>
+                            </tr>
+                        </thead>
+                        <tbody class="Retail">
+                            <!-- ngRepeat: lobjHistory in ViewHistory  | filter: SearchText --><tr ng-repeat="lobjHistory in ViewHistory  | filter: SearchText" class="ng-scope" style="">
+                                <td class="text-nowrap text-center ng-binding">HBB8KRVG</td>
+                                <td class="text-nowrap text-center ng-binding">19/12/2022</td>
+                                <td class="text-nowrap text-center">
+                                    <!-- ngRepeat: lobjDetails in lobjHistory.TicketHistoryTrips --><label ng-repeat="lobjDetails in lobjHistory.TicketHistoryTrips" class="ng-binding ng-scope">
+                                        25/12/2022
+                                        <!-- ngIf: lobjHistory.TicketHistoryTrips.length == 2 --><span ng-if="lobjHistory.TicketHistoryTrips.length == 2" class="ng-scope">
+                                            <!-- ngIf: $index == 0 --><span ng-if="$index == 0" class="ng-scope">-&nbsp;</span><!-- end ngIf: $index == 0 -->
+                                        </span><!-- end ngIf: lobjHistory.TicketHistoryTrips.length == 2 -->
+                                    </label><!-- end ngRepeat: lobjDetails in lobjHistory.TicketHistoryTrips --><label ng-repeat="lobjDetails in lobjHistory.TicketHistoryTrips" class="ng-binding ng-scope">
+                                        31/12/2022
+                                        <!-- ngIf: lobjHistory.TicketHistoryTrips.length == 2 --><span ng-if="lobjHistory.TicketHistoryTrips.length == 2" class="ng-scope">
+                                            <!-- ngIf: $index == 0 -->
+                                        </span><!-- end ngIf: lobjHistory.TicketHistoryTrips.length == 2 -->
+                                    </label><!-- end ngRepeat: lobjDetails in lobjHistory.TicketHistoryTrips -->
+                                </td>
+                                <td class="text-nowrap text-center">
+                                    <label class="ng-binding">
+                                        BLR- GAU
+                                        <!-- ngIf: lobjHistory.TicketHistoryTrips.length == 2 --><span ng-if="lobjHistory.TicketHistoryTrips.length == 2" class="ng-binding ng-scope">
+                                            - BLR
+                                        </span><!-- end ngIf: lobjHistory.TicketHistoryTrips.length == 2 -->
+                                    </label>
+                                </td>
+                                <td class="text-nowrap text-center">
+                                    <!-- ngRepeat: lobjDetails in lobjHistory.TicketHistoryTrips --><label ng-repeat="lobjDetails in lobjHistory.TicketHistoryTrips" class="ng-binding ng-scope">
+                                        AirAsia India-SME Fare
+                                        <!-- ngIf: lobjHistory.TicketHistoryTrips.length == 2 --><span ng-if="lobjHistory.TicketHistoryTrips.length == 2" class="ng-scope">
+                                            <!-- ngIf: $index == 0 --><span ng-if="$index == 0" class="ng-scope">-&nbsp;</span><!-- end ngIf: $index == 0 -->
+                                        </span><!-- end ngIf: lobjHistory.TicketHistoryTrips.length == 2 -->
+                                    </label><!-- end ngRepeat: lobjDetails in lobjHistory.TicketHistoryTrips --><label ng-repeat="lobjDetails in lobjHistory.TicketHistoryTrips" class="ng-binding ng-scope">
+                                        AirAsia India-NON REFUNDABLE
+                                        <!-- ngIf: lobjHistory.TicketHistoryTrips.length == 2 --><span ng-if="lobjHistory.TicketHistoryTrips.length == 2" class="ng-scope">
+                                            <!-- ngIf: $index == 0 -->
+                                        </span><!-- end ngIf: lobjHistory.TicketHistoryTrips.length == 2 -->
+                                    </label><!-- end ngRepeat: lobjDetails in lobjHistory.TicketHistoryTrips -->
+                                </td>
+                            </tr><!-- end ngRepeat: lobjHistory in ViewHistory  | filter: SearchText -->
+                        </tbody>
+                    </table></body></html>
